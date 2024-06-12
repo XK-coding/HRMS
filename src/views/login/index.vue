@@ -76,7 +76,7 @@ export default {
           this.$store.dispatch('user/login', this.loginForm)
         }
       })
-    }
+    },
     
   }
 }
