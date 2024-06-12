@@ -1,10 +1,18 @@
+import { getToken,setToken,removeToken } from '@/utils/auth'
 const state = {
-  token: null
+  token: getToken() //从缓存中读取初始值
 }
 
 const mutations = {
   setToken(state, token) {
     state.token = token
+    // 同步到缓存
+    setToken(token)
+  },
+  removeToken () {
+    // 删除Vuex的token
+    state.token = null
+    removeToken()
   }
 }
 
