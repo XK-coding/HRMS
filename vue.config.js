@@ -36,7 +36,7 @@ module.exports = {
       warnings: false,
       errors: true
     },
-    porxy: {
+    proxy: {
       // path: 目标服务器 百度 新浪  网易 。。
       "/api": {
         target: 'https://heimahr.itheima.net/'
